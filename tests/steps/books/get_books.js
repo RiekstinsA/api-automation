@@ -2,7 +2,7 @@ import { request } from '../../utils/requests.js'
 
 export async function getBooks() {
     it('Retrieve a list of all books', async function () {
-        await request(this, 'POST', '/users', requestBody, true, 
+        await request(this, 'GET', '/books', undefined, false, 
             {
                 statusCode : 200,
                 expectedFields: [
